@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f8f8f8;
+    }
+    header, section, footer {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    fieldset {
+      margin-bottom: 15px;
+      border-radius: 4px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #007BFF;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Enhanced HTML5 Content & Mastering Forms</h1>
+    <p>This page demonstrates lists, tables, media content, and a well-structured HTML5 form with built-in validation.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Popular Web Technologies (List Example)</h2>
+    <ul>
+      <li>HTML5
+        <ul>
+          <li>Semantic Tags</li>
+          <li>Forms</li>
+        </ul>
+      </li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Course Schedule (Table Example)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Topic</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Introduction to HTML5</td>
+          <td>2 Hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Forms & Validation</td>
+          <td>3 Hours</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Media & Accessibility</td>
+          <td>2 Hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Example</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Placeholder image example">
+      <figcaption>Example of an embedded image.</figcaption>
+    </figure>
+    <audio controls>
+      <source src="example-audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <video width="400" controls>
+      <source src="example-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 0912345678" pattern="[0-9]{10}" required>
+      </fieldset>
+
+      <!-- Account Details -->
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" minlength="6" required>
+
+        <label for="role">Select Role:</label>
+        <select id="role" name="role" required>
+          <option value="">--Please choose an option--</option>
+          <option value="student">Student</option>
+          <option value="developer">Developer</option>
+          <option value="teacher">Teacher</option>
+        </select>
+      </fieldset>
+
+      <!-- Preferences -->
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="newsletter" value="yes" checked> Subscribe to newsletter
+        </label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Write your comments here..."></textarea>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment Example. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
